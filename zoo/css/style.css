@@ -1,0 +1,466 @@
+@import url('reset.css');
+
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+        font-family: 'GmarketSansMedium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}  
+
+@font-face {
+    font-family: 'IBMPlexSansKR-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {scroll-behavior: smooth;}
+
+#wrap { width: 100%;}
+#header_wrap { width: 100%;}
+
+
+#header { position: relative; width: 1200px;  margin: 0 auto;}
+#header h1 { width: 100%;  padding: 30px 0 10px 0; text-align: center;}
+
+#navbar { width: 100%; height: 60px;  z-index: 99; border-top: 1px solid #ccc; background: rgb(248, 245, 245)}
+#navbar ul.gnb {width: 1200px; margin: 0 auto; }
+#navbar ul.gnb > li{ float: left; width: 20%; text-align: center; line-height: 60px; position: relative;}
+#navbar ul.gnb > li > a{ font-size: 20px; color:#000; font-weight: 400; display: block;}
+#navbar ul.gnb > li:hover > a { color: #fff; background: #333;}
+
+.sticky { position: fixed; top: 0; width: 100%;}
+
+.top_menu {position: absolute; top: 10px; right: 10px;}
+.top_menu li {float: left;  padding: 0 10px; color: #777;}
+.top_menu li a{float: left; font-size: 14px; color: #777;}
+.top_menu li.line{ font-size: 14px; color: #777; }
+.top_menu li a:hover {color:rgb(64, 126, 106); font-weight: 500;}
+
+
+.right_menu { 
+    position: fixed; 
+    top: 30%; 
+    right: 0px; 
+    z-index: 99999999; 
+}
+
+.r_menu a { 
+    padding: 5px 20px; 
+    display: block; 
+    margin-bottom: 5px; 
+    background: #fff; 
+    border-radius: 20px 0 0 20px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.r_menu a:hover { 
+    background: #000; 
+    color: #fff; 
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+
+
+
+
+#navbar ul.sub {position: absolute; top: 60px; left: 0;  z-index: 999; width: 100%; 
+    background: rgb(25,25,25,0.5); display: none; }
+#navbar ul.sub li a { padding: 5px 0; display: block; color: #fff;}
+#navbar ul.sub li a:hover {  color: yellow; }
+    
+#pull {display: none; color: #999;}
+
+
+@media (max-width:1220px) {
+    #header {width: 100%;}
+    #navbar ul.gnb {width: 100%;}
+    .right_menu { display: none;}
+}
+@media (max-width:768px) {
+    #header h1 {padding-top: 40px; height: 100px;}
+    #navbar {height: 50px;}
+    #navbar ul.gnb li {line-height: 50px;}
+    #navbar ul.gnb li a{ font-size: 2.5vw; padding: 0 1%;}
+    .top_menu li {float: left; font-size: 12px; padding: 0 3px; }
+    #navbar ul.sub {position: absolute; top: 50px;}
+
+}
+@media (max-width:480px) {
+    #header h1 {padding-top: 20px;}
+    .top_menu {display: none;}
+   
+    #navbar ul.sub li {display: none;}
+}
+
+#banner {width: 100%; height: 800px; text-align: center; overflow: hidden; position: relative;}
+#banner img {max-width: 100%; height: auto;}
+
+.mb_text1 {color: #b9dccf;font-size: 2vw;
+    position: absolute; top: 17vw; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%; }
+
+.mb_text2 {color: #fdb018;font-size: 4vw;
+    position: absolute; top: 21vw; left: 50%;
+    transform: translate(-50%,-50%);font-weight: 700;font-family: 'GmarketSansBold';
+     text-align: center;}
+
+.mb_text2 span {color: #fff;}
+
+
+
+#banner768 {width: 100%;  text-align: center; overflow: hidden; position: relative; display: none;}
+#banner768 img {max-width: 100%; height: auto;}
+
+
+.video-container {position:relative; padding-bottom:56.25%; padding-top:0px; height:0; overflow: hidden;}
+.video-container iframe,.video-container object,.video-container embed { position:absolute;top: 0; left:0; width:100%; height:100%;}
+
+
+
+
+
+@media (max-width:768px) {
+#banner {display: none;}
+#banner768 {display: block;}
+.mb_text1 {font-size: 5.5vw;  position: absolute; top: 50vw;}
+.mb_text2 {font-size: 8vw;  position: absolute; top: 60vw;}
+
+}
+
+/* 이용안내 아이콘 */
+
+#contents_wrap1 {width: 100%; padding: 0px 0 150px 0;}
+#icon_box {width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
+
+.icon { text-align: center;}
+.icon1 {width: 100px ; height: 100px; border-radius: 50%; border: 2px solid #ccc;
+    display: flex; justify-content: center; align-items: center; margin-bottom: 10px;}
+.icon1 i {color: #ccc; font-size: 45px;}   
+
+.icon1:hover {background:#444 ; border: 2px solid #444;}
+.icon1:hover i {color: #fff;}
+
+@media (max-width:1220px) {
+    #icon_box {width: 95%;}
+    .icon { display: flex; justify-content: center; flex-wrap: wrap;}
+
+    .icon1 {width: 7vw; height: 7vw;}
+    .icon1 i {font-size: 3vw;}
+}
+@media (max-width:768px) {
+    #icon_box {flex-wrap: wrap;}
+    .icon {width: 25%; margin-bottom: 30px;}
+   
+    .icon1 {width: 15vw; height: 15vw;}
+    .icon1 i {font-size: 7vw;}
+}
+
+@media (max-width:480px) {
+    #contents_wrap1 {width: 100%; padding: 0px 0 50px 0;}
+}
+
+/* 동물 소식 */
+
+#contents_wrap2 {background: url(../imgs/section1_back.jpg); height: 730px;}
+#news_box {width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap;
+    justify-content: space-between; }
+.b_text2 {padding-top: 100px; text-align: center; font-size: 50px; 
+    font-weight: 700; color: #fff; font-family: 'GmarketSansBold';}
+.s_text2 {margin:-10px 0 100px 0; text-align: center; color: #ccc; font-size: 24px;}
+
+.news {width: 21.25%; position: relative;}
+.n_text1 {font-size: 20px; font-family: 'IBMPlexSansKR-SemiBold';  color: #000; 
+    position: absolute; top: 12%; left: 50%; transform: translate(-50%,-50%); 
+    z-index:9; text-align: center; width: 100%;}
+
+.n_text2 {font-size:18px;color: #000; font-weight: 300; width: 100%;
+    position: absolute; top:35%; left: 55%; transform: translate(-50%,-50%); z-index:9; }
+.n_text3 {font-size:18px; color: #000; font-weight: 200; text-align: right; width: 100%;
+    position: absolute; top:47%; left:43%; z-index:9; transform: translate(-50%,-50%);}
+
+.news:nth-child(3) >.n_text2 {position: absolute; top:32%; left: 55%; transform: translate(-50%,-50%);}
+.news:nth-child(4) >.n_text2 {position: absolute; top:39%; left: 55%; transform: translate(-50%,-50%);}
+
+.news img { max-width: 100%; height: auto;}
+.news:hover img { transform: scale(1.07); }
+.news *{ transition: all 0.25s ease-in-out; }
+
+.go_text {position: absolute; top:0; left: 0; z-index:9;
+    transform: translateX(-50%); color: #054647; opacity: 0;
+    padding: 50% 7% 3.5% 38%;font-family: 'GmarketSansMedium'; font-weight: 900;}
+
+.news:hover .go_text {transition-duration: 1s; transform: translateX(0); opacity: 1;}
+
+.news:hover .n_text2{ display: none;}
+.news:hover .n_text3 { display: none;}
+
+
+@media (max-width:1220px) {
+    #contents_wrap2 {width: 100%;}
+    #news_box {width: 95%;}
+    .n_text1 {font-size: 1.5vw; }
+    .n_text2 {font-size: 1.5vw; }
+    .n_text3 {font-size: 1.5vw; }
+    .n_text4 {font-size: 1.5vw; }
+    .go_text {font-size: 2vw;}
+}
+@media (max-width:768px) {
+    #contents_wrap2 {height: 1150px;}
+    .b_text2 {padding-top: 50px; text-align: center; font-size: 30px; }
+    .s_text2 {font-size: 16px; margin:0 0 50px 0;}
+    #news_box {width: 90%;}
+    .news {width: 47.5%; margin-bottom: 20px; }
+    .news:hover {transform: scale(1);}
+    .news img {width: 100%;}
+    .n_text1 {font-size: 3vw; }
+    .n_text2 {font-size: 3vw; }
+    .n_text3 {font-size: 3vw; }
+    .go_text {font-size: 3vw;}
+}
+
+@media (max-width: 480px) {
+#contents_wrap2 {height: 800px;}
+}
+
+
+
+
+/* 동물원이야기 */
+#contents_wrap3 {background: #fcf2e4; width: 100%; padding: 50px 0;} 
+#story_box1 {width: 1200px; margin: 0 auto 100px auto;}
+
+.b_text1 { padding: 100px 0 10px 0; text-align: center;font-size: 50px; font-weight: 700;
+    color: #494649;font-family: 'GmarketSansBold';}
+.s_text1 {margin:-10px 0 100px 0; text-align: center;color: #999;font-size: 24px;}
+
+.notice {width:150px; float: left; }
+.notice p {font-size: 28px; color: #494649; font-weight: 700; text-align: center; 
+    padding-top: 20px;font-family: 'GmarketSansBold';}
+.notice i {font-size: 80px; color: #e2d8c4; padding:54px 30px ;}
+
+
+.list {width: 500px; float: left; padding: 24px 120px 0 40px; }
+.list li {padding: 30px 15px 10px 15px; 
+border-bottom: solid 1px #494649; }
+.list li span {float: right;}
+
+.list li a { font-size:16px; color:#054647;}
+.list li a:hover {color: #000; font-weight: 500;}
+
+
+.play_box {width: 390px; height: 220px; float: right; padding-bottom: 100px;}
+
+.video-container {
+    position:relative; 
+    padding-bottom:56.25%; 
+    padding-top:0px; 
+    height:0; 
+    overflow: hidden;
+}
+.video-container iframe,.video-container object,.video-container embed { 
+    position:absolute;
+    top: 0; 
+    left:0; 
+    width:100%; 
+    height:100%;
+}
+
+@media (max-width:1220px) {
+    #contents_wrap3 {width: 100%;}
+    #story_box1 {width: 100%;}
+    .notice {width: 12.5%;}
+    .list {width: 41.6%; padding:20px 10% 0 3.4%;}
+    .play_box {width: 32.5%; } 
+    .notice p {font-size: 18px;}
+    .notice i {font-size: 70px; padding: 50px 20px; }
+    .list li a {font-size: 14px; }
+
+}
+
+@media (max-width:768px) {
+    .b_text1 {padding-top: 50px; font-size: 30px; }
+    .s_text1 {font-size: 16px; margin:0 0 50px 0;}
+    .notice {width: 25%;}
+    .notice i {font-size: 60px; padding: 50px 35%; }
+    .list {width: 73%; padding: 0 2% 0 0;}
+    .play_box {width: 96%; padding: 5% 2% 8% 2%;} 
+}
+@media (max-width:480px) {
+    .notice i {font-size: 50px; padding: 50px 30%; }
+    .list li span {display: none;}
+}
+
+#contents_wrap4 {width: 100%; padding: 0px 0 50px 0;}
+
+#story_box2 {width: 100%; overflow: hidden;}
+.story {float: left;width: 20%; overflow: hidden;}
+.story img {max-width: 100%; height: auto;}
+.story:hover img { opacity: 0.7; transform: scale(1.2); }
+.story *{ transition: all 0.4s ease-in-out; }
+
+
+@media (max-width:768px) {
+    .story {width: 25%;}
+    .s_5 {display: none;}
+}
+
+@media (max-width:480px) {
+    .story {width: 50%;}
+    .s_1 {width:100%;}
+    .s_1 img {width: 100%;}
+    .s_5 {display: block;}
+    .story:hover {transform: none; }
+}
+
+
+/* 100배 즐기기 */
+#contents_wrap5 {width: 100%; padding: 0px 0 50px 0;}
+
+#fun100_1 {width: 1200px; margin: 0 auto;}
+.fun_wrap {width: 47.5%; float: left; }
+.fun_wrap2 {width: 47.5%; float: right; margin-bottom: 100px;}
+
+.fun1 {float: left; width: 45%;}
+.fun2 {float: right; width: 45%; margin-bottom: 10%;}
+.fun3 { width: 100%; float: left;}
+.fun4 {float: right; width: 100%; }
+
+
+.fun1 img {max-width: 100%; height: auto; }
+.fun2 img {max-width: 100%; height: auto; }
+.fun3 img {max-width: 100%; height: auto; }
+.fun4 img { max-width: 100%; height: auto;}
+
+.fun1:hover {opacity: 0.5;}
+.fun2:hover {opacity: 0.5;}
+.fun3:hover {opacity: 0.5;}
+.fun4:hover {opacity: 0.5;}
+
+
+@media (max-width:1220px) {
+    #fun100_1 {width: 100%;}
+}
+@media (max-width:768px) {
+    .fun_wrap {width: 95%; float: right; margin-right: 2.5%; }
+    .fun_wrap2 {width: 95%; float: left; margin: 0 2.5%;}
+    .fun1 {width: 48.5%; }
+    .fun2 { width: 48.5%;  margin-bottom: 3%;}
+    .fun3 {margin-bottom: 3%;}
+    .fun4 {margin-top: 1%;}
+
+    .fun1 img {width: 100%;}
+    .fun2 img {width: 100%;}
+    .fun3 img {width: 100%;}
+    .fun4 img {width: 100%;}
+}
+
+
+
+
+
+/* 중간배너 */
+#banner2 {width: 100%; height: 450px; position: relative; text-align: center;
+    background: url(../imgs/banner2.jpg)no-repeat center  center fixed;
+    background-size: cover; 
+}
+    
+    .bb_text {position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+        color: #fff; font-size: 2.2vw; font-family: 'GmarketSansMedium'; width: 100%; text-align: center;}
+
+@media (max-width:768px) {
+    #banner2 { height: 300px; }
+    .bb_text { font-size: 3vw; }
+}
+
+@media (max-width:480px) {
+    #banner2 { height: 200px; }
+    .bb_text { font-size: 3.3vw; }
+}
+
+
+    /* 할인정보 */
+#sale_box {width: 1200px; margin: 0 auto; padding-bottom: 100px;}
+.b_text3 {padding: 100px 0 50px 0;text-align: center;font-size: 30px; 
+    font-weight: 700;color: #054647;font-family: 'GmarketSansBold';}
+
+.sale1 {float: left; width: 255px; margin: 0 60px 0 0; text-align: center; background:#fff;
+position: relative;}
+
+.sale1 img:hover {opacity: 0.15;}
+
+.sale1 img {max-width: 100%; height: auto;}
+
+.more_text {position: absolute; top:0; left: 0;z-index:9;
+    transform: translateX(-40%); color: #000;  opacity: 0;
+padding: 100px 0 0 54px;font-family: 'GmarketSansBold';}
+
+.sale1:hover .more_text {transition-duration: 0.3s;opacity: 1; transform: translateX(0);
+    font-size:28px; font-weight: 900;}
+
+
+.sale {float: left; width: 255px;  text-align: center; background:#fff;
+    position: relative;}
+.sale img {max-width: 100%; height: auto;}
+
+
+.sale img:hover {opacity: 0.15;}
+.sale:hover .more_text {transition-duration: 0.3s;opacity: 1;transform: translateX(0);
+    font-size:28px; font-weight: 900;}
+
+@media (max-width: 1220px) {
+    #sale_box {width: 100%;}
+    .sale1 {float: left; width: 21.25%; margin-right: 5%;}
+    .sale {float: left; width: 21.25%;}
+}
+
+@media (max-width: 768px) {
+    #sale_box {width: 95%; float: left; margin: 0 2.5%;}
+    .sale1 {float: left; width: 48.5%; margin: 0 0 0 0 ;}
+    .sale {float: right; width: 48.5%; margin-top: 2.5%;}
+    .sale1:nth-child(2) {float: right;}
+    .sale1:nth-child(3) {margin-top: 2.5%;}
+    .sale .sale1 img {width: 100%;}
+    .sale img {width: 100%;}
+}
+
+
+/* 푸터 */
+#footer_wrap {width: 100%; height:300px; background: #3c3c3c; }
+#footer {width: 900px; margin:0 auto; }
+.sns_box {width: 900px; height: 100px; margin: 0 auto; border-bottom: 1px solid #555;
+    display: flex; justify-content: center ; align-items: center; flex-direction: row;}
+  
+.sns {width: 40px;margin: 10px 10px;}
+
+
+.sns i {font-size: 2.5rem; color: #bbb;}
+.sns i:hover {color: #fff;}
+
+
+.f_logo {width: 420px; float: left ; text-align: right; padding:65px 30px 0 0;}
+.f_logo img {max-width: 100%; height: auto;}
+.copy {width: 450px;float: right; color: #bbb; font-size: 14px; padding-top: 64px;}
+
+@media (max-width: 1220px) {
+    #footer {width: 75%;}
+    .sns_box {width: 100%;}
+    .f_logo {width: 37%; padding: 50px 3% 0 0;}
+    .copy {width: 60%; padding: 50px 0 0 0;}
+}
+@media (max-width: 480px) {
+    .f_logo {width: 100%; padding: 20px 0 0 0; text-align: center;}
+    .copy {width: 100%; padding: 20px 0 0 0; text-align: center;}
+}
