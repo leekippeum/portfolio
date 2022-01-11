@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daria - On Your Special day, Only One For You</title>
+    
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header_wrap" class="clearfix">
+            <div id="header">
+                <h1><a href="index.html"><img src="images/h_logo.png" alt="로고"></a></h1>
+                <nav>
+                    
+                    <div class="nav_bg"></div>
+                    <ul class="gnb">
+                        <li><a href="brand.html">About</a></li>
+                        <li><a href="vera_wang.html">Signature Dress</a>
+                            <ul class="sub">
+                                <li><a href="vera_wang.html">Vera Wang</a></li>
+                                <li><a href="">Rivini</a></li>
+                                <li><a href="">Reem acra</a></li>
+                                <li><a href="">Alon Livne</a></li>
+                                <li><a href="">Ines Di Santo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    
+
+                    <ul class="gnb_1">
+                        <li><a href="#">Press</a>
+                            <ul class="sub_1">
+                                <li><a href="">Celebrities</a></li>
+                                <li><a href="">Press</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+
+                <span id="pull" onclick="openNav()">&#9776;</span> 
+                <div id="nav768" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="brand.html">About</a>
+                        <a href="vera_wang.html">Signature Dress</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <script>
+                    function openNav() {
+                      document.getElementById("nav768").style.width = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("nav768").style.width = "0%";
+                    }
+                    </script>
+            </div>
+        </header>
+<!-- 배너        -->
+        <section id="sub_banner">
+            <img src="images/sub_banner_brand.png" alt="브랜드소개">
+        </section>
+
+        <section id="sub_banner480">
+            <img src="images/sub_banner_brand480.png" alt="브랜드소개">            
+        </section> 
+
+<!-- 소개글 -->
+        <section id="brand_wrap" >
+            <img class="line" src="images/dress_line.png">
+            <p class="dress_stext">BRAND STORY</p>
+            <div class="b_logo"><img src="images/brand_logo.png" alt="로고"></div>
+            <div id="story">
+                <div class="story1">
+                    <div class="story1_1">
+                        <p class="animated wow fadeInLeft">아름다운</p>
+                        <p class="animated wow fadeInLeft delay-02s">우아한</p>
+                        <p class="animated wow fadeInLeft delay-03s">매력적인</p>
+                        <p class="animated wow fadeInLeft delay-04s">빛나는</p>
+                    </div>
+                    <div class="story1_2">
+                        <p>당신에게 어울리는<br>품격있는 드레스</p>
+                    </div>
+                </div>
+                <div class="story2">
+                    <img src="images/brand1.png">
+                    <p class="story2_text animated wow fadeInLeft delay-02s">DARIA는 여러 해외 디자이너 드레스를<br>한 곳에서 비교하며 경험해보실 수 있는
+                    <br>수입 드레스 편집샵입니다</p>
+                </div>
+                <div class="story3">
+                    <p class="story3_text animated wow fadeInRight delay-02s">놀라울 정도로 고급스럽고 하이 퀄리티 디자인<br>
+                    수년간의 경험을 바탕으로 신부님의 취향을 파악하여<br>만족스러운 최고의
+                웨딩스타일링을 약속합니다</p>
+                    <img src="images/brand2.png">
+                </div>
+                <div class="story4 animated wow fadeInDown delay-03s">
+                    <p>국내 최고 웨딩 컨설턴트분들이 모여<br>신부님의 분위기, 체형, 그리고 예식 장소 및 계절 등
+                    <br>모든 부분을 고려하여 최적의 웨딩드레스를 매칭해드립니다.</p>
+                </div>
+            </div>
+        </section>
+<!-- 중간배너 -->
+        <section id="sub_banner2">
+            <p>On Your Special Day, Only One For You</p>
+        </section>
+
+
+
+
+<!-- 푸터-->
+      <footer id="footer_wrap">
+            <div id="footer">
+                <h2><img src="images/f_logo.png" alt="푸터로고"></h2>
+                <div class="time">
+                    <div class="open">
+                        <h3>Opening hours</h3>
+                        <p>Monday-Friday</p>
+                        <p>9am-5pm</p>
+                        <p>Weekend</p>
+                        <p>9am-7pm</p>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <p><a href="mailto:kippeum17@naver.com"> <img src="images/i_1.png" alt="이메일"></a>&nbsp; &nbsp; abcd@efg.com</p>
+                        <p><a href="tel:012-345-6789"><img src="images/i_2.png" alt="전화"></a>  &nbsp; &nbsp; 012-345-6789</p>
+                        <p><img src="images/i_3.png" alt="위치"> &nbsp; &nbsp; 서울시 서울구 서울로 123-4</p>
+                        <p><img src="images/i_4.png" alt="카카오톡"> &nbsp; &nbsp; daria</p>
+                    </div>
+                </div>
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12658.327468648426!2d126.95091234007572!3d37.51777889643081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1fb54dc2079%3A0xd15faf568cc799b6!2z64W465Ok7ISs!5e0!3m2!1sko!2skr!4v1634547604388!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            </div>
+        </footer> 
+    </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+</body>
+</html>

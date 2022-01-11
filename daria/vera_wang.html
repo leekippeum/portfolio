@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daria - On Your Special day, Only One For You</title>
+    
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header_wrap" class="clearfix">
+            <div id="header">
+                <h1><a href="index.html"><img src="images/h_logo.png" alt="로고"></a></h1>
+                <nav>
+                    
+                    <div class="nav_bg"></div>
+                    <ul class="gnb">
+                        <li><a href="brand.html">About</a></li>
+                        <li><a href="vera_wang.html">Signature Dress</a>
+                            <ul class="sub">
+                                <li><a href="vera_wang.html">Vera Wang</a></li>
+                                <li><a href="">Rivini</a></li>
+                                <li><a href="">Reem acra</a></li>
+                                <li><a href="">Alon Livne</a></li>
+                                <li><a href="">Ines Di Santo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+
+                    <ul class="gnb_1">
+                        <li><a href="#">Press</a>
+                            <ul class="sub_1">
+                                <li><a href="">Celebrities</a></li>
+                                <li><a href="">Press</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+
+                <span id="pull" onclick="openNav()">&#9776;</span> 
+                <div id="nav768" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="brand.html">About</a>
+                        <a href="vera_wang.html">Signature Dress</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <script>
+                    function openNav() {
+                      document.getElementById("nav768").style.width = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("nav768").style.width = "0%";
+                    }
+                    </script>
+            </div>
+        </header>
+
+<!-- 배너        -->
+        <section id="sub_banner">
+            <img src="images/sub_banner_vw.png" alt="베라왕페이지">
+            <div class="bn_text_box">
+                <h4>Vera Wang</h4>
+                <p>1990년, VOGUE의 성공한 패션에디터이자 RALPH LAUREN에서 일하던 베라왕은 <br>
+                    본인의 결혼을 기점으로 웨딩드레스를 만들기 시작하였습니다. 전통적인 드레스와 전혀 다른 <br>
+                    새로운 드레스 언어를 창조한 그녀의 디자인에 여성들은 열광하였고, <br>
+                    이후 레디투웨어, 홈웨어, 향수등을 거느린 거대 제국으로 이어졌습니다. <br>
+                    베라왕의 드레스는 실용적이고 아름답습니다. 여성의 움직임을 고려한 세심한 디자인과 <br>
+                    독창적인 디자인의 조화는 지금껏 수많은 여성들에게 베라왕의 드레스가 사랑받아 온 이유입니다.</p>
+            </div>
+            <div class="btn3"><a href="#dress_wrap">View Collection <span>→</span></a></div>
+        </section>
+
+        <section id="sub_banner480">
+            <img src="images/sub_banner_vw480.png" alt="베라왕페이지">
+            <div class="bn_text_box">
+                <h4>Vera Wang</h4>
+                <p>1990년, VOGUE의 성공한 패션에디터이자 RALPH LAUREN에서 
+                    일하던 베라왕은 본인의 결혼을 기점으로 웨딩드레스를 만들기
+                    시작하였습니다. 전통적인 드레스와 전혀 다른 새로운 드레스
+                    언어를 창조한 그녀의 디자인에 여성들은 열광하였고, 이후
+                    레디투웨어, 홈웨어, 향수등을 거느린 거대 제국으로 이어졌습니다. 
+                    베라왕의 드레스는 실용적이고 아름답습니다. <br> 
+                    여성의 움직임을 고려한 세심한 디자인과 독창적인 디자인의 조화는
+                    지금껏 수많은 여성들에게 베라왕의 드레스가 사랑받아 온 이유입니다.</p>
+            </div>
+            <div class="btn3"><a href="#dress_wrap">View Collection <span>→</span></a></div>
+        </section>
+
+<!-- 드레스갤러리 -->
+        <section id="dress_wrap" class="clearfix" >
+            <img class="line" src="images/dress_line.png">
+            <p class="dress_stext">COLLECTION</p>
+            <p class="dress_btext"><span class="prev"><a href="#">&lt;</a></span>Vera Wang<span class="next"><a href="#">&gt;</a></span></p>
+            <div id="collection">
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft"><a href="#!"><img src="images/v_img1.png" alt="PIA"></a></div>
+                    <p class="dress_name">PIA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+                </div>
+                <div class="dress ">
+                    <div class="dress_img animated wow fadeInTopLeft delay-02s"><a href="#!"><img src="images/v_img2.png" alt="PIPPA"></a></div>
+                    <p class="dress_name">PIPPA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress ">
+                    <div class="dress_img animated wow fadeInTopLeft delay-03s"><a href="#!"><img src="images/v_img3.png" alt="PRISCILLA"></a></div>
+                    <p class="dress_name">PRISCILLA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft"><a href="#!"><img src="images/v_img4.png" alt="FIONA"></a></div>
+                    <p class="dress_name">FIONA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft delay-02s"><a href="#!"><img src="images/v_img5.png" alt="DIANA"></a></div>
+                    <p class="dress_name">DIANA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft delay-03s"><a href="#!"><img src="images/v_img6.png" alt="ELEANOR"></a></div>
+                    <p class="dress_name">ELEANOR</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft"><a href="#!"><img src="images/v_img7.png" alt="HELENA"></a></div>
+                    <p class="dress_name">HELENA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft delay-02s"><a href="#!"><img src="images/v_img8.png" alt="KATHERINE"></a></div>
+                    <p class="dress_name">KATHERINE</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="dress">
+                    <div class="dress_img animated wow fadeInTopLeft delay-03s"><a href="#!"><img src="images/v_img9.png" alt="FELISA"></a></div>
+                    <p class="dress_name">FELISA</p>
+                    <p class="dress_detail">드레스 설명 들어갈 자리<br>드레스 설명 들어갈 자리</p>
+
+                </div>
+                <div class="btn"><a href="#!">View More<span>→</span></a></div> 
+            
+            </div>
+        </section>
+
+
+
+
+<!-- 푸터-->
+      <footer id="footer_wrap">
+            <div id="footer">
+                <h2><img src="images/f_logo.png" alt="푸터로고"></h2>
+                <div class="time">
+                    <div class="open">
+                        <h3>Opening hours</h3>
+                        <p>Monday-Friday</p>
+                        <p>9am-5pm</p>
+                        <p>Weekend</p>
+                        <p>9am-7pm</p>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <p><a href="mailto:kippeum17@naver.com"> <img src="images/i_1.png" alt="이메일"></a>&nbsp; &nbsp; abcd@efg.com</p>
+                        <p><a href="tel:012-345-6789"><img src="images/i_2.png" alt="전화"></a>  &nbsp; &nbsp; 012-345-6789</p>
+                        <p><img src="images/i_3.png" alt="위치"> &nbsp; &nbsp; 서울시 서울구 서울로 123-4</p>
+                        <p><img src="images/i_4.png" alt="카카오톡"> &nbsp; &nbsp; daria</p>
+                    </div>
+                </div>
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12658.327468648426!2d126.95091234007572!3d37.51777889643081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1fb54dc2079%3A0xd15faf568cc799b6!2z64W465Ok7ISs!5e0!3m2!1sko!2skr!4v1634547604388!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            </div>
+        </footer> 
+    </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+</body>
+</html>
