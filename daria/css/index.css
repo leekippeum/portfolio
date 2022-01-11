@@ -141,7 +141,7 @@ nav ul.sub_1 li a:hover {color: #766d71; background: rgb(255,255,255,0.4); }
 
 
 /* 섹션1 브랜드 */
-#section1_wrap {width: 100%; 
+#section1_wrap {width: 100%; margin-top: -5px;
     background: url(../images/section1_bg.png) repeat center center; height: 1040px;}
 #section1 {width: 100%;  float: right; padding-top: 200px; position: relative; }
 
