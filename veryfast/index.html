@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERY FAST :: Burger & Chiken Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+        document.getElementById('').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'wow fadeInDown';
+            section.className = 'wow shake';
+            section.className = 'wow zoomIn';
+            section.className = 'wow lightSpeedIn';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header_wrap" class="clearfix">
+            <div id="header">
+                <ul class="top_menu">
+                    <li><a href="#">메인</a></li>
+                    <li class="line_c">|</li>
+                    <li><a href="#">로그인</a></li>
+                    <li class="line_c">|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li class="line_c">|</li>
+                    <li><a href="#">영문페이지</a></li>
+                </ul>
+
+                <h1 class="animated wow bounce"><a href="#"><img src="images/logo.png" alt="로고"></a></h1>
+                <!-- 네비 -->
+                <nav>
+                    <a id="pull" href="#"><i class="fas fa-bars"></i></a>
+                    <div class="nav_bg"></div>
+                    <ul class="gnb">
+                        <li><a href="#">About</a>
+                            <ul class="sub">
+                                <li><a href="#">VF소개</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">지점안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Set-Menu</a>
+                            <ul class="sub">
+                                <li><a href="#">버거 & 치킨</a></li>
+                                <li><a href="#">커플세트</a></li>
+                                <li><a href="#">패밀리세트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Burger</a>
+                            <ul class="sub">
+                                <li><a href="#">단품</a></li>
+                                <li><a href="#">버거세트</a></li>
+                                <li><a href="#">사이드메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Chicken</a>
+                            <ul class="sub">
+                                <li><a href="#">단품</a></li>
+                                <li><a href="#">Half & Half</a></li>
+                                <li><a href="#">치킨샐러드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Customer</a>
+                            <ul class="sub">
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">고객문의</a></li>
+                                <li><a href="#">아이디어</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- 배너 -->
+        <section id="main_banner" >
+            <p class="bn_text1">Burger & Chicken Restaurant<br><span>VERY FAST</span>를 경험해 보세요!</p>
+            <div class="slider">
+                <div><img src="images/main_banner.jpg" alt="메인배너"></div>
+                <div><img src="images/main_banner2.jpg" alt="메인배너"></div>
+            </div>
+        </section>
+
+        <section id="main_banner768" >
+            <p class="bn_text1">Burger & Chicken Restaurant<br><span>VERY FAST</span>를 경험해 보세요!</p>
+            <div class="slider">
+                <div><img src="images/768main_banner.jpg" alt="메인배너"></div>
+                <div><img src="images/768main_banner2.jpg" alt="메인배너"></div>
+            </div> 
+        </section>
+
+
+        <!-- 공지사항/신규지점 -->
+        <section id="content_wrap1" class="clearfix">
+            <div id="content1">
+                <p class="b_text1">공지사항/신규지점</p>
+                <!-- 공지 -->
+                <div class="notice animated wow slideInLeft delay-02s">    
+                    <div class="line"><h2>Notice<span><a href="#">+</a></span></h2></div>
+                
+                    <ul>
+                        <li> <a href="#!">8월 신제품 발표일 확정 ! <span>2021-07-27</span></a></li>
+                        <li><a href="#!">영양성분 및 원산지안내 (업데이트) <span>2021-07-01</span></a></li>
+                        <li><a href="#!">알레르기 유발제품 표시 (업데이트) <span>2021-07-01</span></a></li>
+                        <li class="last"><a href="#!">모바일쿠폰 사용방법 안내 <span>2021-07-01</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- 신규 -->
+                <div class="new_store animated wow slideInRight delay-02s">
+                    <div class="line"><h2>신규지점<span><a href="#">+</a></span></h2></div>
+                        <div class="store1_text">
+                            <div class="store1">
+                                <p class="date">OPEN<br>2021.08.09</p>
+                                <a href="#!"><img src="images/n_store1.jpg" alt="신규매장1"></a>
+                            </div>
+                            <p class="store_name">서울시 강남구 역삼1호점 오픈안내</p>
+                        </div>
+                        
+                    <div class="store2_text">
+                        <div class="store2">
+                            <p class="date">OPEN<br>2021.08.13</p>
+                            <a href="#!"><img src="images/n_store2.jpg" alt="신규매장1"></a>
+                        </div>
+                        <p class="store_name">서울시 동대문구 DDP점 오픈안내</p>
+                    </div>
+                    
+                       
+                </div>
+            </div>
+        </section>
+
+        <!-- 영상/아이콘 -->
+      <section id="content_wrap1" class="clearfix">
+            <div id="content2">
+                <!-- 영상 -->
+                <div class="play_box animated wow slideInUp">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LXJfvfpnnik" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+
+                <!-- 아이콘 -->
+                <p class="lb_text animated wow slideInUp">VERY FAST 합정 본점<br><span>24시 영업 / 주차가능 / 배달가능</span></p>
+               <div class="group_icon  animated wow slideInUp">
+                    
+                    <div class="icon"><a href="#!"><i class="far fa-calendar-check"></i></a>
+                        <p class="text_icon">예약안내</p></div>
+                    <div class="icon"><a href="#!"><i class="fas fa-search-location"></i></a>
+                        <p class="text_icon">지점안내</p></div>
+                    <div class="icon"><a href="#!"><i class="far fa-lightbulb"></i></a>
+                        <p class="text_icon">아이디어</p></div>
+                    <div class="icon"><a href="#!"><i class="far fa-user-circle"></i></a>
+                        <p class="text_icon">고객문의</p></div>
+                    <div class="icon i_5"><a href="#!"><i class="far fa-handshake"></i></a>
+                        <p class="text_icon">신규입점문의</p></div>
+                </div>
+            </div>
+        </section>  
+        <!-- VF버거 -->
+        <section id="content_wrap2" class="clearfix">
+            <div id="content3">
+                <p class="b_text2">VF버거</p>
+                <p class="s_text">신선한 재료가 가득한 VF버거를 즐기세요!</p>
+                <p class="more1"><a href="#!">+더보기</a></p>
+
+                <div class="box1 animated wow fadeInTopLeft">
+                    <p class="more3">자세히보기</p>
+                    <a href="#!"><img src="images/buger1.jpg" alt="스테이크버거"></a></div>
+
+                <div class="box1 animated wow fadeInTopLeft delay-02s">
+                    <p class="more3">자세히보기</p>
+                    <a href="#!"><img src="images/buger2.jpg" alt="통새우버거"></a></div>
+
+                <div class="box2 animated wow fadeInTopLeft delay-03s">
+                    <p class="more3">자세히보기</p>
+                    <a href="#!"><img src="images/buger3.jpg" alt="블랙베이컨버거"></a></div>
+
+                <div class="box_name">
+                    <p class="text_img2">스테이크버거</p>
+                    <p class="text_img3">통새우버거</p>
+                    <p class="text_img4">블랙베이컨버거</p>
+                </div>
+                    
+            </div>
+        </section>
+
+        <!-- VF치킨 -->
+        <section id="content_wrap3" class="clearfix">
+            <div id="content4">
+                <p class="b_text2">VF치킨</p>
+                <p class="s_text">당신의 마음을 사로잡을 바삭함, VF치킨 입니다</p>
+                <p class="more2"><a href="#!">+더보기</a></p>
+
+                <div class="box1 animated wow fadeInTopLeft">
+                    <p class="more3">자세히보기</p>
+                    <a href="#!"><img src="images/chicken1.jpg" alt="후라이드치킨"></a></div>
+
+                <div class="box1 animated wow fadeInTopLeft delay-02s">
+                    <p class="more3">자세히보기</p>
+                    <a href="#!"><img src="images/chicken2.jpg" alt="고추핫치킨"></a></div>
+
+                <div class="box2 animated wow fadeInTopLeft delay-03s">
+                    <p class="more3">자세히보기</p>
+                    <a href="#!"><img src="images/chicken3.jpg" alt="소이갈릭치킨"></a></div>
+
+                    <div class="box_name">
+                        <p class="text_img5">후라이드치킨</p>
+                        <p class="text_img6">고추핫치킨</p>
+                        <p class="text_img7">소이갈릭치킨</p>
+                    </div>
+            </div>
+        </section> 
+
+        <!-- 중간배너 -->
+       <section id="banner2">
+            <p class="bn_text2"><span>VERY FAST</span>에게 기대하는 신메뉴 !</p>
+            <p class="bn_text3">새로운 아이디어<span>로 선정되는 고객님께 식사권을 보내드립니다.</span></p>
+        </section> 
+
+        <!-- 8월 추천 -->
+        <section id="content_wrap1" class="clearfix">
+            <div id="content1">
+                <div id="left8">
+                    <div class="box3 animated wow slideInLeft">
+                        <h3>8월 추천 버거</h3>
+                        <p class="more4">자세히보기</p>
+                        <a href="#!"><img src="images/aug_1.jpg" alt="8월 추천 버거"></a>
+                    </div>
+                    <div class="box_name3 animated wow slideInLeft">
+                        <p class="text_img8">프레쉬치즈버거 with 스위트콘 샐러드 SET</p>
+                        <p class="text_10">두툼한 소고기패티와 고소한 치즈의 만남 !<br>산뜻함을 더해줄 콘샐러드를 함께 즐기세요</p>
+                    </div>
+                </div>
+                
+                <div id="right8">
+                    <div class="box4 animated wow slideInRight ">
+                        <h3>8월 추천 치킨</h3>
+                        <p class="more4">자세히보기</p>
+                        <a href="#!"><img src="images/aug_2.jpg" alt="8월 추천 치킨"></a>                    
+                    </div>
+                    <div class="box_name4 animated wow slideInRight ">
+                        <p class="text_img9">치킨샐러드</p>
+                        <p class="text_10">바삭한 VF후라이드치킨과 신선한 야채들의 콜라보 !<br>무더운 여름을 VF치킨과 함께 이겨내보아요</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- 메뉴 -->
+      <section id="content_wrap4" class="clearfix">
+            <div id="menu">
+
+                <div class="veryfast"><img src="images/veryfast.png" alt="베리패스트"></div>
+                <div class="box5">
+                    <h4><a href="#!">About</a></h4>
+
+                    <ul>
+                        <li><a href="#!">VF소개</a></li>
+                        <li><a href="#!">공지사항</a></li>
+                        <li><a href="#!">지점안내</a></li>
+                    </ul>
+                </div>
+
+                <div class="box5">
+                    <h4><a href="#!">Set-Menu</a></h4>
+
+                    <ul>
+                        <li><a href="#!">버거 & 치킨</a></li>
+                        <li><a href="#!">커플세트</a></li>
+                        <li><a href="#!">패밀리세트</a></li>
+                    </ul>
+                </div>
+
+                <div class="box5">
+                    <h4><a href="#!">Burger</a></h4>
+
+                    <ul>
+                        <li><a href="#!">단품</a></li>
+                        <li><a href="#!">버거세트</a></li>
+                        <li><a href="#!">사이드메뉴</a></li>
+                    </ul>
+                </div>
+
+                <div class="box5">
+                    <h4><a href="#!">Chicken</a></h4> 
+
+                    <ul>
+                        <li><a href="#!">단품</a></li>
+                        <li><a href="#!">Half & Half</a></li>
+                        <li><a href="#!">치킨샐러드</a></li>
+                    </ul>
+                </div>
+
+                <div class="box5">
+                    <h4><a href="#!">Customer</a></h4>
+
+                    <ul>
+                        <li><a href="#!">예약안내</a></li>
+                        <li><a href="#!">고객문의</a></li>
+                        <li><a href="#!">아이디어</a></li>
+                    </ul>
+                </div>
+
+                <div class="box6">
+                    <h4><a href="#!">신규입점문의</a></h4></a>
+                    
+                    <ul>
+                        <li><a href="#!">개설절차</a></li>
+                        <li><a href="#!">FAQ</a></li>
+                        <li><a href="#!">상담문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+        <!-- 푸터 -->
+        <footer id="footer_wrap" class="clearfix">
+            <div id="footer">
+                <div class="logo"><img src="images/f_logo.png" alt="푸터로고"></div>
+
+                <div class="copy">
+                    서울 마포구 합정동 G 타워 2층 주식회사 베리패스트 | 전화주문 1599-1234<br>
+                    사업자 등록번호 123-45-67890 | (주) VF 대표이사 이기쁨<br>
+                    Copyright 2021 VF Co., Ltd. All right Reserved
+                </div>
+                <div class="sns_wrap">
+                    <div class="sns"><a href="#!"><img src="images/blog.png" alt="블로그"></a></div>
+                    <div class="sns"><a href="#!"><img src="images/instagram.png" alt="인스타그램"></a></div>
+                    <div class="sns"><a href="#!"><img src="images/youtube.png" alt="유투브"></a></div>
+                </div>
+            </div>
+        </footer>
+      
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.slider').bxSlider({
+                    auto: true, // 자동으로 애니메이션 시작
+                    speed: 900, // 애니메이션 속도
+                    pause: 3500, // 애니메이션 유지 시간 (1000은 1초)
+                    mode: 'fade', // 슬라이드 모드 ('fade', 'horizontal', 'vertical')
+                    pager: false, // 페이지 표시 보여짐
+                    captions: true, // 이미지 위에 텍스트를 넣을 수 있음
+                    controls: true,
+
+                });
+            });
+        </script> 
+</body>
+</html>
