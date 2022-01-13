@@ -146,11 +146,19 @@ table {text-align: left;}
 table.profile_list { width: 100%; padding-bottom: 30px ;   }
 table.profile_list td { font-family: 'NEXON Lv1 Gothic OTF'; color: #03023f; padding: 2px 0; font-size: 18px; line-height: 30px;}
 
-.bt{ margin-top: 70px; width: 400px; height: 80px; border: 1px solid #fff; }
+.bt{ margin-top: 70px; width: 400px; height: 80px; border: 1px solid #fff; 
+    animation-name: flash ; animation-duration: 1.5s; animation-iteration-count: infinite;}
 .bt a {color: #fff; text-align: center; line-height: 80px; font-size: 22px;}
 .bt:hover { border: 2px solid #4d5b7c; background: rgb(249,216,173);
-    background: linear-gradient(90deg, rgba(249,216,173,1) 0%, rgba(232,171,181,1) 35%, rgba(146,152,208,1) 100%);}
+    background: linear-gradient(90deg, rgba(249,216,173,1) 0%, rgba(232,171,181,1) 35%, rgba(146,152,208,1) 100%);
+    animation-name:none;}
 .bt:hover a {color: #000;}
+
+
+@keyframes flash {
+0%, 50%, 100% {opacity: 1;}
+25%, 75% {opacity: 0;}
+}
 
 /* 각 섹션 */
 #container {
@@ -184,12 +192,13 @@ table.profile_list td { font-family: 'NEXON Lv1 Gothic OTF'; color: #03023f; pad
 .description {font-size: 18px; padding-bottom: 40px; line-height: 30px; padding-left: 15px;}
 .description span{font-family: 'NEXON Lv1 Gothic OTF Bold';}
 .go a {font-size: 30px; font-family: 'NEXON Lv1 Gothic OTF Bold'; color: #000; padding-left: 150px;
+	animation-name: flash ; animation-duration: 1.5s; animation-iteration-count: infinite;
     text-shadow:
     /* White glow */
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff;}
-.go a:hover {color: rgb(189, 14, 101);}
+.go a:hover {color: rgb(189, 14, 101); animation-name:none;}
 
 .go a::after {
 	content: '';
