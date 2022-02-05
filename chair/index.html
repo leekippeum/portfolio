@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의자 Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header_wrap" class="clearfix">
+            <div id="header">
+                
+                <div id="mySidenav" class="sidenav"> 
+                    
+                    <!-- <a href="#!"><i class="fas fa-bars"></i>&nbsp;MENU</a> -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="gnb">
+                        <li><a href="#!">신메뉴</a></li>
+                        <li class="finish"><a href="#!">할인코너</a></li>
+
+                        <li><a href="#!">가정용</a>
+                            <ul class="sub">
+                                <li><a href="">침실</a></li>
+                                <li><a href="">거실</a></li>
+                                <li><a href="">서재</a></li>
+                            </ul>
+                        </li>
+                        <li class="finish"><a href="#!">영업용</a></li>
+
+                        <li><a href="#!">1인용</a></li>
+                        <li><a href="#!">2~3인용</a></li>
+                        <li class="finish"><a href="#!">4인 이상</a></li>
+
+                        <li><a href="#!">색상별</a>
+                            <ul class="color">
+                                <li><a href="#!"><span class="red"></span></a></li>
+                                <li><a href="#!"><span class="yellow"></span></a></li>
+                                <li><a href="#!"><span class="green"></span></a></li>
+                                <li><a href="#!"><span class="blue"></span></a></li>
+                                <li><a href="#!"><span class="white"></span></a></li>
+                                <li><a href="#!"><span class="black"></span></a></li>
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <span class="open" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+                <script>
+                    function openNav() {
+                      document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidenav").style.width = "0";
+                    }
+                    </script>
+
+                <h1><a href="index.html"><img src="" alt="로고"></a></h1>
+
+                <div id="search">
+                    <span class="material-icons-outlined">
+                        search</span>
+                    <input type="search" placeholder="검색어를 입력하세요">
+                </div>
+
+                <div id="quick_icon">
+                    <ul>
+                        <li><a href="#"><span class="material-icons-outlined" style="font-size:30px;">
+                            local_shipping</span></a></li>
+                        <li><a href="#"><span class="material-icons-outlined" style="font-size:30px;">
+                            person_outline</span></a></li>
+                        <!-- <li><a href="#"><span class="material-icons-outlined" style="font-size:30px;">
+                            favorite_border</span></a></li> -->
+                        <li><a href="#"><span class="material-icons-outlined" style="font-size:30px;">
+                            shopping_basket</span></a></li>
+                        <li><a href="#"><span class="material-icons-outlined" style="font-size:30px; color:red">
+                            emoji_objects</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section id="main_banner">
+            <img src="images/m_banner.jpg" alt="메인배너">
+            <p class="banner_text"><a href="#">제품보러가기</a></p>
+        </section>
+
+        <section id="contents_wrap1" class="clearfix">
+            <div id="contents1">
+                <p class="s_text">2022 January</p>
+                <p class="b_text">NEW model</p>
+                <div class="new1">
+                    <a href="#!"><img src="images/new1.png" alt="신제품1"></a>
+                </div>
+                <div class="new1_1"><img src="images/new1_1.jpg"></div>
+                <div class="new2_1"><img src="images/new2_1.jpg"></div>
+                <div class="new2">
+                    <a href="#!"><img src="images/new2.png" alt="신제품1"></a>
+                </div>
+            </div>      
+            
+        
+        </section>
+      
+
+        <section id="contents_wrap2" class="clearfix">
+            <div id="contents1">
+                <p class="b_text">MD's Choice</p>
+                <div class="md_container">
+                    <div class="md_b">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/md_b.jpg" alt="md_big"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                    <div class="md_right">
+                        <div class="md_s">
+                            <ul class="on">
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    favorite_border</span></a></li>
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    shopping_basket</span></a></li>
+                            </ul>
+                            <a href="#!"><img src="images/md_s1.jpg" alt="md_small"></a>
+                            <p class="item_name">제품이름</p>
+                            <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                        </div>
+                        <div class="md_s">
+                            <ul class="on">
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    favorite_border</span></a></li>
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    shopping_basket</span></a></li>
+                            </ul>
+                            <a href="#!"><img src="images/md_s2.jpg" alt="md_small"></a>
+                            <p class="item_name">제품이름</p>
+                            <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                        </div>
+                        <div class="md_s">
+                            <ul class="on">
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    favorite_border</span></a></li>
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    shopping_basket</span></a></li>
+                            </ul>
+                            <a href="#!"><img src="images/md_s3.jpg" alt="md_small"></a>
+                            <p class="item_name">제품이름</p>
+                            <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                        </div>
+                        <div class="md_s">
+                            <ul class="on">
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    favorite_border</span></a></li>
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    shopping_basket</span></a></li>
+                            </ul>
+                            <a href="#!"><img src="images/md_s4.jpg" alt="md_small"></a>
+                            <p class="item_name">제품이름</p>
+                            <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                        </div>
+                        <div class="md_s">
+                            <ul class="on">
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    favorite_border</span></a></li>
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    shopping_basket</span></a></li>
+                            </ul>
+                            <a href="#!"><img src="images/md_s5.jpg" alt="md_small"></a>
+                            <p class="item_name">제품이름</p>
+                            <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                        </div>
+                        <div class="md_s">
+                            <ul class="on">
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    favorite_border</span></a></li>
+                                <li><a href="#"><span class="material-icons-outlined">
+                                    shopping_basket</span></a></li>
+                            </ul>
+                            <a href="#!"><img src="images/md_s6.jpg" alt="md_small"></a>
+                            <p class="item_name">제품이름</p>
+                            <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contents_wrap1" class="clearfix">
+            <div id="contents1">
+                <p class="b_text">Best Photo Review</p>
+                <div class="bt">
+                    <span class="prev"><a href="#!">&lt;</a></span>
+                    <span class="next"><a href="#!">&gt;</a></span>
+                </div>
+
+
+                <div class="regular slider autoplay">
+                    <div class="review">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/r1.jpg" alt="리뷰"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                    <div class="review">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/r2.jpg" alt="리뷰"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                    <div class="review">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/r3.jpg" alt="리뷰"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                    <div class="review">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/r4.jpg" alt="리뷰"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                    <div class="review">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/r5.jpg" alt="리뷰"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                    <div class="review">
+                        <ul class="on">
+                            <li><a href="#"><span class="material-icons-outlined">
+                                favorite_border</span></a></li>
+                            <li><a href="#"><span class="material-icons-outlined">
+                                shopping_basket</span></a></li>
+                        </ul>
+                        <a href="#!"><img src="images/r6.jpg" alt="리뷰"></a>
+                        <p class="item_name">제품이름</p>
+                        <p class="price"><span><del>100,000원</del></span>&nbsp;97,500원</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section id="sub_banner" class="clearfix">
+            <div id="contents1">
+                <div class="s_banner">
+                    <img class="line" src="images/s_banner_card.png">
+                    <p class="s_banner_s">Sweet mood <span>with</span><br>@@@</p>
+                    <p class="s_banner_b">SHOW ROOM</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contents_wrap3">
+            <div id="contents2">
+                <div class="box1">
+                    <div class="tax box2">무통장입금 계좌번호</div>
+                    <p class="no"><span><img src="images/bank.png"></span>123-45-67890</p>
+                    <P class="tax_name">우리은행 @@</P>
+                </div>
+                <div class="box1">
+                    <div class="notice box2">공지사항</div>
+                    <ul>
+                        <li><a href="#!">공지사항입니다</a></li>
+                        <li><a href="#!">공지사항입니다</a></li>
+                        <li><a href="#!">공지사항입니다</a></li>
+                        <li><a href="#!">공지사항입니다</a></li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <div class="cust box2">고객센터</div>
+                    <div class="icon_box">
+                        <div class="icon">
+                            <div class="icon1"><a href="tel:010-9776-0199"><i class="fas fa-phone"></i></a></div>
+                            <p>콜센터</p>
+                        </div>
+                        <div class="icon">
+                            <div class="icon1"><a href="#!"><i class="fas fa-question"></i></a></div>
+                            <p>1:1 문의</p>
+                        </div>
+                        <div class="icon">
+                            <div class="icon1"><a href="#!"><i class="fas fa-tools"></i></a></div>
+                            <p>주문제작</p>
+                        </div>
+                    </div>
+                </div> 
+
+
+                
+                
+            </div>            
+        </section>
+
+        <footer id="footer_wrap" class="clearfix">
+            <div id="footer_menu">
+                <div id="contents1">
+                    <ul class="menu">
+                        <li><a href="#!">회사소개</a></li>
+                        <li><a href="#!">이용약관</a></li>
+                        <li><a href="#!">개인정보 취급방침</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer">
+                
+                <div class="f_logo"><img src="images/f_logo.png" alt="푸터로고"></div>
+                <div class="copy">
+                    회사이름 / 서울시 강서구 마곡동 / TEL. 02-123-4567<Br>
+                    copyright © 2022 회사이름. all rights reserved. 
+                </div>
+                <div class="show">
+                    <P><span>SHOW ROOM</span><Br>
+                        서울시 서대문구 아현동 / TEL.02-111-2222<br>
+                        09:00-20:00 (매주 화요일 휴무)</P>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    
+  
+
+    
+
+    
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $('.autoplay').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: true,
+            });
+        });
+    </script>
+    
+    </body>
+    </html>
