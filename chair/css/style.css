@@ -27,10 +27,11 @@
     padding-top: 50px;
 }
 
+
 .gnb li a {
-    padding: 5px 0 5px 32px;
+    padding: 3px 0 3px 32px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     display: block;
     transition: 0.3s;
@@ -39,16 +40,20 @@
 .finish {border-bottom: 1px solid #eee;}
 
 .sub li a {
-    padding: 4px 0 4px 42px;
+    padding: 3px 0 3px 42px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     display: block;
     transition: 0.3s;
 } 
-.color {display: flex; }
-.color li a span {width: 15px; height: 15px; border-radius: 50%; 
-    border: 1px solid #bbb; float: left;}
+
+
+.color{display: flex; } 
+.color a span {width: 15px; height: 15px; border-radius: 50%; 
+        border: 1px solid #bbb; float: left; margin: 0 -1.5px;}
+    
+.color a span:hover {border: 1px solid #000;}
 
 .red {background: red;}
 .yellow {background: yellow;}
