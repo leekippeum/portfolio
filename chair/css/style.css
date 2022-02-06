@@ -151,8 +151,8 @@
 .review:hover .on {display: block;}
 
 .bt {position: absolute; top: 0;right: 5px; }
-.bt span a {font-size: 30px; padding: 0 5px; color: #555;}
-.bt span a:hover {color: #f9435d;}
+.bt span {font-size: 30px; padding: 0 5px; color: #555; cursor: pointer;}
+.bt span:hover {color: #f9435d;}
 
 
 /* 서브배너 */
