@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&display=swap');
 /* font-family: 'Blinker', sans-serif; */
 
-#wrap {width: 100%; min-width: 1220px;}
+#wrap {width: 100%; min-width: 1220px; filter: blur(5px);}
 /* 헤더 */
 #header_wrap {width: 100%; position: relative;}
 #header { height: 120px; padding-top: 30px; 
